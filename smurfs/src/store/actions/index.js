@@ -18,10 +18,10 @@ export const sendSmurfData = () => dispatch =>  {
   dispatch({type: SEND_SMURF_START});
     axios
       .post('http://localhost:3333/smurfs', {
-            name: '',
-            height: '',
-            age: [],
-            id: []
+        name: '',
+        height: '',
+        age: [],
+        id: []
       })
       .then(res => {
         dispatch({type: SEND_SMURF_SUCCESS, payload: res.data});
