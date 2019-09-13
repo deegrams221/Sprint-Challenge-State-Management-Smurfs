@@ -37,7 +37,7 @@ const SmurfFrom = ({errors, touched, status}) => {
           <button type='submit'>Submit</button>
           {forms.map(form => (
             <p key={form.id}>
-              Name: {form.name}
+              Smurf: {form.name}
             <br/>
               Height: {form.height}
             <br/>
@@ -50,9 +50,9 @@ const SmurfFrom = ({errors, touched, status}) => {
 };
 
 const FormikSmurfForm = withFormik({
-  mapPropsToValues({ name, height, age}){
+  mapPropsToValues({name, height, age}){
     return {
-      name: name || '',
+      smurf: name || '',
       height: height || '',
       age: age || ''
     };

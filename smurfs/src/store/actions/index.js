@@ -19,8 +19,8 @@ export const sendSmurfData = () => dispatch =>  {
     axios
       .post('http://localhost:3333/smurfs', {
             name: '',
-            age: [],
             height: '',
+            age: [],
             id: []
       })
       .then(res => {

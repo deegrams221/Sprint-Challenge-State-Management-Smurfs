@@ -7,8 +7,8 @@ const initialState = {
   smurfs: [
     {
       name: 'name',
-      age: 'age',
       height: 'height',
+      age: 'age',
       id: Math.random()
     },
   ],

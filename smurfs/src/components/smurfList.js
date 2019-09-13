@@ -6,6 +6,7 @@
 import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import {getSmurfData} from '../store/actions';
+import './App.css';
  
 const SmurfList = ({getSmurfData, smurfs, isFetching}) => {
   useEffect(() => {
@@ -20,20 +21,16 @@ const SmurfList = ({getSmurfData, smurfs, isFetching}) => {
     <div className="smurf-list">
       {smurfs.map((smurf) => {
         return (
-          <div role="list" class="ui divided relaxed list">
-            <div role="listitem" class="item">
-              <div class="content">
-                <div class="header">Smurf: {smurf.name}</div>
-              </div>
-              <div class="content">
-                <div class="description">
-                  <p>Age: {smurf.age}</p>
-                  <p>Height: {smurf.height}</p>
-                  <hr />
-                </div>
-              </div>
+          <div>
+            <div className="smurf-content">
+              <h2>Smurf: {smurf.name}</h2>
             </div>
-          </div>
+            <div className="smurf-description">
+              <p>Height: {smurf.height}</p>
+              <p>Age: {smurf.age}</p>
+              <hr />
+            </div>
+        </div>
         );
       })}
     </div>
