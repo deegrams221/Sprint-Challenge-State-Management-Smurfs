@@ -4,10 +4,10 @@
 const initialState = {
   smurfs: [
     {
-      id: Math.random(),
-      name: 'Name',
-      age: 'Type',
-      height: '5cm'
+      name: 'name',
+      age: 'age',
+      height: 'height',
+      id: Math.random()
     },
   ],
   isFetching: false,
