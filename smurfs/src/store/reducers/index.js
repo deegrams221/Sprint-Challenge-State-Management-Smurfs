@@ -21,15 +21,14 @@ export const reducer = (state = initialState, action) => {
     case FETCH_SMURF_START:
       return {
         ...state,
-        isLoading: true,
+        isFetching: true,
         error: ''
       };
       case FETCH_SMURF_SUCCESS:
         return {
           ...state,
-          isLoading: false,
+          isFetching: false,
           smurfs: action.payload,
-          error: ''
         };
     default:
       return state;

@@ -13,7 +13,7 @@ export const SEND_SMURF_START = 'SEND_SMURF_START';
 export const SEND_SMURF_SUCCESS = 'SEND_SMURF_SUCCESS';
 
 // action creators
-export const sendData = () => dispatch =>  {
+export const sendSmurfData = () => dispatch =>  {
   // dispatch and axios request - send
   dispatch({type: SEND_SMURF_START});
     axios
@@ -28,7 +28,7 @@ export const sendData = () => dispatch =>  {
       });
 };
 
-export const getData = () => dispatch => {
+export const getSmurfData = () => dispatch => {
   // dispatch and axios request - fetch
     dispatch({ type: FETCH_SMURF_START });
     axios
