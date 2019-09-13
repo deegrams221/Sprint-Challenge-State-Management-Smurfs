@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./App.css";
 
-// import TopMenu from components
+// import smurfList and FormikSmurfForm from components
 
 class App extends Component {
   render() {
