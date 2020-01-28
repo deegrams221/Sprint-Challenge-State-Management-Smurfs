@@ -1,28 +1,33 @@
 .App {
   text-align: center;
+  background-color: rgb(55, 149, 226);
+  color: rgb(4, 29, 167);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1 {
+  font-size: 3em;
+  color: rgb(3, 19, 110);
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.Smurf-Form>h2 {
+  font-size: 2.25em;
+  padding-top: 1em;
+  padding-bottom: 0;
 }
 
-.App-title {
-  font-size: 1.5em;
+.smurf-list {
+  padding: 2em;
+  font-size: 1.2rem;
 }
 
-.App-intro {
-  font-size: large;
+h1 {
+  padding-top: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h2 {
+  padding-bottom: 1em;
+}
+
+hr {
+  width: 20em;
 }
